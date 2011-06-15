@@ -8,3 +8,21 @@ http://pipes.yahoo.com/vicmortelmans/twitterfeed
 
 HTML front-end where users can start new feeds and link them to their 
 twitter-account using twitterfeed.com.
+
+Twitterfeed input must be either txt or xml.
+
+Providing input as txt
+
+All strings must be on a separate line. No blank lines. Based on startdate 
+and frequency (cf. Yahoo Pipe), the strings will gradually be submitted to
+the feed. The feed contains only the 10 most recent strings. Once the end 
+of the collection is reached, the sequence starts over.
+
+Providing input as xml
+
+All strings must be contained in a <string> node. Each node can have a @time
+atribute. The @time attribute contains a number of minutes. The @time 
+attributes should be sorted. Based on the startdate, the strings for which 
+@time has passed will be submitted to the feed. The feed contains only the 
+10 most recent strings. Once the end of the collection is reached, the 
+sequence starts over.
