@@ -9,7 +9,7 @@ http://pipes.yahoo.com/vicmortelmans/twitterfeed
 HTML front-end where users can start new feeds and link them to their 
 twitter-account using twitterfeed.com.
 
-Twitterfeed input must be either txt or xml.
+Twitterfeeder input must be either txt or xml.
 
 Providing input as txt
 
