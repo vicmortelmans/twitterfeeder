@@ -1,0 +1,10 @@
+Twitterfeeder consists of following components.
+
+YQL Open Tables "twittertextfeed", "twitterxmlfeed"
+https://github.com/vicmortelmans/yql-tables/tree/master/data
+
+Yahoo Pipe "twitterfeed"
+http://pipes.yahoo.com/vicmortelmans/twitterfeed
+
+HTML front-end where users can start new feeds and link them to their 
+twitter-account using twitterfeed.com.
