@@ -3,6 +3,10 @@ Twitterfeeder consists of following components.
 YQL Open Tables "twittertextfeed", "twitterxmlfeed"
 https://github.com/vicmortelmans/yql-tables/tree/master/data
 
+Twittertextfeed keys: startdate, frequency, URL of txt-file
+
+Twitterxmlfeed keys: 
+
 Yahoo Pipe "twitterfeed"
 http://pipes.yahoo.com/vicmortelmans/twitterfeed
 
@@ -20,9 +24,6 @@ of the collection is reached, the sequence starts over.
 
 Providing input as xml
 
-All strings must be contained in a <string> node. Each node can have a @time
-atribute. The @time attribute contains a number of minutes. The @time 
-attributes should be sorted. Based on the startdate, the strings for which 
-@time has passed will be submitted to the feed. The feed contains only the 
-10 most recent strings. Once the end of the collection is reached, the 
-sequence starts over.
+All strings must be contained in a <string> node. Each node has an @id
+atribute. The xml also contains a <idgenerator> node. This contains a javascript
+function that takes the current date/time as an argument and generates an id.
